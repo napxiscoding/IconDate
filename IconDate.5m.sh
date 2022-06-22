@@ -1,13 +1,15 @@
 #!/bin/bash
 
-# <xbar.title>Date in Icon</xbar.title>
-# <xbar.version>v1.2</xbar.version>
-# <xbar.author>Napx Leong</xbar.author>
-# <xbar.author.github>napxiscoding</xbar.author.github>
-# <xbar.desc>IconDate shows date in icon on the menu bar.</xbar.desc>
-# <xbar.image>https://raw.githubusercontent.com/napxiscoding/IconDate/main/xbar-preview.png</xbar.image>
-# <xbar.dependencies>bash</xbar.dependencies>
-# <xbar.abouturl>https://github.com/napxiscoding</xbar.abouturl>
+#  <xbar.title>Date in Icon</xbar.title>
+#  <xbar.version>v1.21</xbar.version>
+#  <xbar.author>Napx Leong</xbar.author>
+#  <xbar.author.github>napxiscoding</xbar.author.github>
+#  <xbar.desc>IconDate shows date in icon on the menu bar.</xbar.desc>
+#  <xbar.image>https://raw.githubusercontent.com/napxiscoding/IconDate/main/xbar-preview.png</xbar.image>
+#  <xbar.dependencies>bash</xbar.dependencies>
+#  <xbar.abouturl>https://github.com/napxiscoding/</xbar.abouturl>
+#  <xbar.var>boolean(Clar3_alt=false): Whether to use alt font or not.</xbar.var>
+
 # Originally CalendarLite @WeibingChen https://github.com/WeibingChen17/
 # Thanks @glyphrstudio https://www.glyphrstudio.com/ providing FREE font making service online.
 # I know basic coding only. Please help optimizing below codes.
@@ -21,8 +23,14 @@
 
 
 dd=$(date +%_d)
-icon="Calr3"
-# icon="Calr3-Alt"
+Clar3_alt = false
+
+if [ $Clar3_alt = false ]
+then
+    icon="Calr3"
+else
+    icon="Calr3-Alt"
+fi
 
 if [ $dd -lt 10 ]
 then
