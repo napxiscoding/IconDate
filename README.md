@@ -14,11 +14,7 @@ IconDate shows date in icon on the menu bar, a plugin for [xbar](https://xbarapp
 
 #
 
-- To use alt font, install [Calr3-alt](https://github.com/napxiscoding/IconDate/raw/main/Calr3-Alt.otf) font then change the code to
-
-```bash
-  icon="Calr3-Alt"
-```
+- To use alt font, install [Calr3-alt](https://github.com/napxiscoding/IconDate/raw/main/Calr3-Alt.otf) font then check ☑️ on Plugin Browser
 
 [![Preview Calr3-alt](https://github.com/napxiscoding/IconDate/raw/main/source/IconDate-Calr3_alt.png)](https://github.com/napxiscoding/IconDate)
 
